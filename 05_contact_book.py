@@ -8,7 +8,7 @@ def add_contact():
 
 def view_contacts():
     with open("contacts.txt", "r") as f:
-        print("\n📞 All Contacts:")
+        print("\nAll Contacts:")
         for line in f:
             name, phone, email = line.strip().split(",")
             print(f"Name: {name} | Phone: {phone} | Email: {email}")
@@ -26,3 +26,4 @@ while True:
         break
     else:
         print("Invalid input, try again.")
+
